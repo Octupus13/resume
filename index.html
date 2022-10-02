@@ -6,22 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT ME</title>
 </head>
-<body>
-    <img src="IMG_3549.png" alt="My PHOTOGRAPH" width="15%">
-    <h1>
+<body style="background-color: lavender;">
+<table cellspacing="20">
+    <tr>
+    <td><img src="IMG_3549.PNG" alt="My PHOTOGRAPH" width="250" length="250" style="border: 3px solid navy; border-radius: 50%;"></td>
+    <td> 
+        <h1 style="color: darkcyan;">
         Worameth Tantithanawong
-    </h1>
+        </h1>
         <p><em>สาขาเทคโนโลยีดิจิทัลและสารสนเทศ</em></p> 
         <p>คณะวิศกรรมศาสตร์และเทคโนโลยี</p>
         <p><strong><a href="http://www.pim.ac.th">สถาบันการจัดการปัญญาภิวัฒน์</a></strong></p>
-        <p>
-            <strong>ABOUT ME</strong><br>
+    </td>
+    </tr>
+</table>
+<p>
+    
+   
+            <strong style="color: darkcyan;">ABOUT ME</strong><br>
             ชื่อ-สกุล: วรเมธ ตันติธนวงศ์ ชื่อเล่น: ทิว <br>
             เป็นหัวหน้าห้องของ DIT <br>
             ชอบกินกะเพราหมูกรอบเผ็ดน้อยไข่ดาว แต่ไข่ดาวตั้ง 10-15 บาท เลยไม่ค่อยสั่งแล้ว
-            <hr>
+            <hr style="border-style:none; border-top-style:dotted; border-color:grey; border-width:10px;">
         </p>
-        <h3>Experience</h3>
+        <h3 style="color: darkcyan;">Skills</h3>
+            <table id="Table" cellspacing="15">
+                <tr>
+                    <td>Basic Java</td>
+                    <td></td>
+                    <td>Basic HTML</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Basic SQL</td>
+                    <td></td>
+                    <td>Basic Javascript</td>
+                    <td></td>
+                </tr>
+        </table>
+        <h3 style="color: darkcyan;">Experience</h3>
         <ul>
             <li>7-11 (CPALL GROUP)</li>
             <li>Hackathailand 2nd Award (Tech Consultant)</li>
@@ -29,5 +52,14 @@
         </ul>
         <p><a href="contact.html">My Contact Channel</a></p>
         <p><a href="report.html">Weekly Report</a></p>
+        <script>
+            const Tb = document.getElementById("Table");
+            for(I=0;I<4;I++){
+                Tb.children[0].children[0].children[1].innerHTML+="&#127833"; 
+                Tb.children[0].children[1].children[1].innerHTML+="&#127833";
+                if(I<2)Tb.children[0].children[0].children[3].innerHTML+="&#127833";
+                if(I<3)Tb.children[0].children[1].children[3].innerHTML+="&#127833";    
+            }
+        </script>
 </body>
 </html>
